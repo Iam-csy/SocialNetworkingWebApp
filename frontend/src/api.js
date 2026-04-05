@@ -1,4 +1,4 @@
-const BASE_URL = '/api';
+const BASE_URL = "https://socialnetworkingwebapp.onrender.com"
 
 const getHeaders = () => {
   const token = localStorage.getItem('token');
