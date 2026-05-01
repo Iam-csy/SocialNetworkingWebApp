@@ -11,7 +11,7 @@ const connectionRoutes = require('./routes/connections');
 const app = express();
 
 app.use(cors({
-  origin: "https://social-networking-web-app.vercel.app",
+  origin: process.env.FRONTEND_URL || "http://localhost:3000",
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));

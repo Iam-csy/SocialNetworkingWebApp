@@ -3,7 +3,6 @@ const router = express.Router();
 const User = require('../models/User');
 const { authenticate } = require('../middleware/auth');
 
-// POST /api/connections/request/:userId - Send connection request
 router.post('/request/:userId', authenticate, async (req, res) => {
   try {
     const targetId = req.params.userId;
